@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registation Page</title>
+</head>
+<body style="background-color: lightblue;">
+    <h1 align="center" style="color: navy;" style="font-weight: bold;">STUDENT REGISTRATION FORM</h1>
+    <form action="">
+        <fieldset>
+            <legend style="font-size: large;font-style:oblique;">Personal Information </legend><br/>
+            <label for="fname" style="font-size:large; font-size: larger; color:rgb(0, 0, 128);">First Name : &nbsp;</label> 
+            <input type="text" id="fname" name="fname" size="20" align="Right" placeholder="Enter first name" required style="margin-left: 10px; padding: 3px 8px 3px 5px ; border: 3px solid rgba(8, 8, 8, 0.6);">
+            <br/>
+            <br/>
+            <label for="lname" style="font-size:large; font-size: larger; color:rgb(0, 0, 128);">Last Name : &nbsp;</label> 
+            <input type="text" id="lname" name="lname" size="20" placeholder="Enter last name" style="margin-left: 10px; padding: 3px 8px 3px 5px ; border: 3px solid rgba(8, 8, 8, 0.6);">
+            <br/>
+            <br/>
+            <label for="course" style="font-size:large; font-size: larger; color:rgb(0, 0, 128);" >Course :&nbsp; </label>
+            <select name="course" id="course" required style="margin-left: 40px; padding: 3px 8px 3px 5px ; border: 3px solid rgba(8, 8, 8, 0.6); width: 184px;">
+                <option value="none" selected disabled hidden>--Please Select--</option>
+                <option value="BCA">BCA</option>  
+                <option value="BBA">BBA</option>  
+                <option value="B.Tech">B.Tech</option>  
+                <option value="MBA">MBA</option>  
+                <option value="MCA">MCA</option>  
+                <option value="M.Tech">M.Tech</option> 
+                <option value="PhD">PhD</option>
+                <option value="Diploma">Diploma</option>
+                                    
+            </select>
+            <br/>
+            <br/>
+            <lable style="font-size:large; font-size: larger; color:rgb(0, 0, 128);">Gender  :&nbsp; &nbsp;&nbsp;&nbsp;</lable>
+            <input type="radio" id="male" name="gender" value="Male" checked  style="margin-left: 16px;">
+            <label for="male" style="font-size:medium;"> Male</label>
+            <input type="radio" id="female" name="gender" value="Female" style="margin-left: 18px;">
+            <label for="female" style="font-size:medium;"> Female</label>
+            <br/>
+            <br/>
+            <label for="age" style="font-size:large; font-size: larger; color:rgb(0, 0, 128);">Age  : &nbsp;</label> 
+            <input type="number" id="age" name="age" min="12" max="40" placeholder="-Select age-" required style="margin-left: 55px; padding: 3px 8px 3px 5px ; border: 3px solid rgba(8, 8, 8, 0.6); width:169px ;"/>
+            <br/>
+            <br/>
+            <label for="dob" style="font-size:large; font-size: larger; color:rgb(0, 0, 128);">Date of Birth:</label> 
+            <input type="date" id="dob" name="dob" required style="margin-left: auto; padding: 3px 8px 3px 5px ; border: 3px solid rgba(8, 8, 8, 0.6); width: 169px;">
+            <br/>
+            <br/>
+            <lable for="email" style="font-size:large; font-size: larger; color:rgb(0, 0, 128);">Email ID  : &nbsp;</lable>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required style="margin-left: 15px; padding: 3px 8px 3px 5px ; border: 3px solid rgba(8, 8, 8, 0.6); width: 170px;" >
+            <br/>
+            <br/>
+            <lable for="pass" style="font-size:large; font-size: larger; color:rgb(0, 0, 128);">Password   : &nbsp;</lable>
+            <input type="password" id="pass" name="pass" placeholder="Enter your password" required style="margin-left: 10px; padding: 3px 8px 3px 5px ; border: 3px solid rgba(8, 8, 8, 0.6); width: 173px;" >
+            <br/>
+            <br/>
+            <label for="c_pass" style="font-size:large; font-size: larger; color:rgb(0, 0, 128);">Confirm Password  : &nbsp;</label>
+            <input type="password" id="c_pass" name="pass"  placeholder="Confirm Password"   onkeyup='check()' required style="margin-left: 10px; padding: 3px 8px 3px 5px ; border: 3px solid rgba(8, 8, 8, 0.6); width: 173px;" />
+            <br/>
+            <br/>
+            <lable for="phno" style="font-size:large; font-size: larger; color:rgb(0, 0, 128);">Phone Number   : &nbsp;</lable>
+            +91
+            <input type="tel"  placeholder="Enter Phone number" name="phone" id="phno" required style="margin-left: 10px; padding: 3px 8px 3px 5px ; border: 3px solid rgba(8, 8, 8, 0.6); width: 173px;">
+            <br/>
+            <br/>
+            <lable for="add" style="font-size:large; font-size: larger; color:rgb(0, 0, 128);">Address   :</lable><br/> 
+            <textarea name="address" id="add" rows="4" cols="50" placeholder="Enter your address..."  required  style="margin-left: 103px; padding: 3px 8px 3px 5px ; border: 3px solid rgba(8, 8, 8, 0.6); width: 250px; "></textarea>
+            <br/>
+            <br/>
+            <lable for="state" style="font-size:large; font-size: larger; color:rgb(0, 0, 128);">State     : &nbsp;</lable>
+            <select name="state" id="state" required style="margin-left: 38px; padding: 3px 8px 3px 5px ; border: 3px solid rgba(8, 8, 8, 0.6); width: 201px;">
+                <option value="none">-Select State-</option>
+                <option value="1">Andaman and Nicobar Islands</option>
+                <option value="2">Andhra Pradesh</option>
+                <option value="3">Arunachal Pradesh</option>
+                <option value="4">Assam</option>
+                <option value="5">Bihar</option>
+                <option value="6">Chandigarh</option>
+                <option value="7">Chattisgarh</option>
+                <option value="8">Dadra and Nagar Haveli</option>
+                <option value="9">Daman and Diu</option>
+                <option value="10">Delhi</option>
+                <option value="11">Goa</option>
+                <option value="12">Gujarat</option>
+                <option value="13">Haryana</option>
+                <option value="14">Himachal Pradesh</option>
+                <option value="15">Jammu &amp; Kashmir</option>
+                <option value="16">Jharkhand</option>
+                <option value="17">Karnataka</option>
+                <option value="18">Kerala</option>
+                <option value="19">Lakshadweep</option>
+                <option value="20">Madhya Pradesh</option>
+                <option value="21">Maharashtra</option>
+                <option value="22">Manipur</option>
+                <option value="23">Meghalaya</option>
+                <option value="24">Mizoram</option>
+                <option value="25">Nagaland</option>
+                <option value="26">Odisha</option>
+                <option value="27">Poducherry</option>
+                <option value="28">Punjab</option>
+                <option value="29">Rajasthan</option>
+                <option value="30">Sikkim</option>
+                <option value="31">Tamil Nadu</option>
+                <option value="32">Telangana</option>
+                <option value="33">Tripura</option>
+                <option value="34">Uttar Pradesh</option>
+                <option value="35">Uttarakhand</option>
+                <option value="36">West Bengal</option>
+            </select>
+            <br/>
+            <br/>
+            <label for="city" style="font-size:large; font-size: larger; color:rgb(0, 0, 128);">City: &nbsp;</label>
+            <input type="text" name="city" id="city" placeholder="Enter your City.." required style="margin-left: 47px; padding: 3px 8px 3px 5px ; border: 3px solid rgba(8, 8, 8, 0.6); width: 185px;"/>
+            <br>
+            <br/>
+            <label for="pin" style="font-size:large; font-size: larger; color:rgb(0, 0, 128);">Pin Code: &nbsp;</label>
+            <input type="number" min="1000"  name="pincode" id="pin" placeholder="ex: 394210" autofocus  required  style="margin-left: 10px; padding: 3px 8px 3px 5px ; border: 3px solid rgba(8, 8, 8, 0.6); width: 185px;"/>
+            <br/>
+            <br/>
+            <label style="font-size:large; font-size: larger; color:rgb(0, 0, 128);">Hobbies :&nbsp;</label>
+            <input type="checkbox" id="hobby" name="Hobbies1" value="Music" checked style="margin-left: 15px;">
+            <label for="hobby"> Music</label>
+            <input type="checkbox" id="hobby1" name="Hobbies2" value="Reading">
+            <lable for="hobby1">Reading</lable>
+            <input type="checkbox" id="hobby2" name="Hobbies3" value="Exersize">
+            <label for="hobby2">Exersize</label>
+            <input type="checkbox" id="hobby3" name="Hobbies4" value="Sports">
+            <label for="hobby3">Sports</label>
+            <input type="checkbox" id="hobby4" name="Hobbies5" value="Travel">
+            <label for="hobby4">Travel</label>
+            <br/>
+            <br/>
+            <lable for="file1" style="font-size:large; font-size: larger; color:rgb(0, 0, 128);">Upload Photo : &nbsp;</lable>
+            <input type="file" name="fileselect" id="file1" required >
+            <br/>
+            <br/>
+            <input type="checkbox" name="declare" id="declare" required/>
+            <label for="declare" style="font-size:large; font-size: medium; color:rgb(0, 0, 128);">I here by declare that the information given above is true and correct.</label>
+            <br/>
+            <br/>
+            <script src='https://www.google.com/recaptcha/api.js'></script>
+            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRzYL92eCZWPWYDqQ58UbKfPU"></div>
+            <br/>
+            <br/>
+            <!-- <input type="submit" value="Register"/> &nbsp;
+            <input type="reset" value="Reset"/> -->
+            <input type="image" name="Image" id="image" alt="Register" src="images/register.png" width="100" height="50" style="margin-left: 10px;"> &nbsp; &nbsp;           
+            <input type="image" name="Image" id="image" alt="Reset" src="images/reset4.png" width="100" height="50" style="margin-left: 10px;"/>
+        </fieldset>
+    </form>
+</body>
+
+</html>
